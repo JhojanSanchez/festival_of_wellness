@@ -386,7 +386,7 @@
     top: 0; left: 0;
     width: 100vw;
     height: 100vh;
-    min-height: 1700dvh;  
+    min-height: 170dvh;  
     background: #000;
     color: white;
     display: flex;
@@ -513,6 +513,7 @@
         font-size: 1.5em;
     }
 }
+
 
 
 
