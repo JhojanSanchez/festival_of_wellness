@@ -382,9 +382,11 @@
 
         .countdown-fullscreen {
     position: fixed;
+    inset: 0;
     top: 0; left: 0;
     width: 100vw;
     height: 100vh;
+    min-height: 130dvh;  
     background: #000;
     color: white;
     display: flex;
@@ -511,3 +513,4 @@
         font-size: 1.5em;
     }
 }
+
