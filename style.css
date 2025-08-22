@@ -459,3 +459,55 @@
 .company-logo img:hover {
     transform: scale(1.05);      /* Efecto hover opcional */
 }
+/* RESPONSIVE PARA MÓVILES */
+@media (max-width: 768px) {
+    .countdown-timer {
+        flex-direction: column;      /* Apilar verticalmente */
+        gap: 15px;                   /* Menor espaciado */
+        padding: 20px;
+    }
+    
+    .time-unit {
+        padding: 15px 20px;          /* Menor padding */
+        min-width: 80px;             /* Menor ancho mínimo */
+    }
+    
+    .time-unit span {
+        font-size: 2.5em;           /* Números más pequeños */
+    }
+    
+    .time-unit label {
+        font-size: 1em;             /* Etiquetas proporcionales */
+    }
+    
+    .countdown-content h1 {
+        font-size: 1.8em;           /* Título más pequeño */
+        margin-bottom: 20px;
+    }
+    
+    .countdown-content p {
+        font-size: 1em;             /* Párrafo ajustado */
+        margin: 15px 0;
+    }
+}
+
+/* PARA MÓVILES MUY PEQUEÑOS */
+@media (max-width: 480px) {
+    .countdown-timer {
+        gap: 10px;
+        padding: 15px;
+    }
+    
+    .time-unit {
+        padding: 12px 15px;
+        min-width: 70px;
+    }
+    
+    .time-unit span {
+        font-size: 2em;             /* Aún más pequeños */
+    }
+    
+    .countdown-content h1 {
+        font-size: 1.5em;
+    }
+}
