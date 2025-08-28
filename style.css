@@ -28,8 +28,8 @@
         }
 
         .logo {
-            width: 120px;
-            height: 120px;
+            width: 150px;
+            height: 150px;
             background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
             border-radius: 50%;
             margin: 0 auto 20px;
@@ -512,5 +512,14 @@
     }
 }
 
+
+.flag-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;   /* 👈 hace que la bandera sea circular */
+    margin-left: 8px;     /* separación respecto al título */
+    vertical-align: middle;
+    object-fit: cover;
+}
 
 
