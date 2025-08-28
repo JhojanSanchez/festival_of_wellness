@@ -1,80 +1,12 @@
         // Datos de las actividades
         const activities = {
             // Ejemplo de día con múltiples actividades (ARRAY)
-            1: [
-                {
-                    title: "Mirada Sana, Mundo Claro",
-                    type: "Presencial",
-                    time: "10:00h - 12:00h",
-                    description: "Un espacio para aprender a cuidar tu salud visual, prevenir el cansancio ocular y mantener una visión nítida en tu día a día. En la sede de Stefanini.",
-                    link: null
-                },
-                {
-                    title: "Mirada Sana, Mundo Claro",
-                    type: "Virtual",
-                    time: "10:00h",
-                    description: "Un espacio para aprender a cuidar tu salud visual, prevenir el cansancio ocular y mantener una visión nítida en tu día a día.",
-                    link: "https://zoom.us/j/example3a"
-                },
-                {
-                    title: "Olivos",
-                    type: "Presencial",
-                    time: "14:00h - 16:00h",
-                    description: "En la sede de Stefanini.",
-                    link: null
-                }
-            ],
-            // Días con una sola actividad (OBJETO - como antes)
-            2: {
-                title: "Potencia tu Bienestar",
-                type: "Virtual",
-                time: "10:00h",
-                description: "Primera charla práctica con consejos esenciales para mantener un cuerpo fuerte, saludable y lleno de energía.",
-                link: "https://zoom.us/j/example3a"
-            },
-            // Ejemplo de otro día con múltiples actividades (ARRAY)
-            3: [
-                {
-                    title: "Regala Vida",
-                    type: "Presencial",
-                    time: "8:00h - 12:00 h",
-                    description: "Participa en la jornada de donación de sangre y sé parte de quienes salvan vidas con un simple y valioso gesto. En la sede de Stefanini.",
-                    link: "https://zoom.us/j/example3a"
-                },
-                {
-                    title: "Emermedica",
-                    type: "Presencial",
-                    time: "8:00h - 12:00h",
-                    description: "En la sede de Stefanini.",
-                    link: null
-                },
-                {
-                    title: "Vetpluss",
-                    type: "Presencial",
-                    time: "14:00h - 16:00h",
-                    description: "En la sede de Stefanini.",
-                    link: null
-                }
-            ],
-            4: {
-                title: "Tu Cuerpo, Tu Mejor Proyecto ",
-                type: "Virtual",
-                time: "10:00h",
-                description: "Segunda sesión para profundizar en hábitos que optimizan tu salud física y mental.",
-                link: "https://zoom.us/j/example4"
-            },
-            5: {
-                title: "",
-                type: "",
-                time: "",
-                description: "",
-                link: null
-            },
             8: [
             {
                 title: "Desestrésate",
                 type: "Presencial",
                 time: "8:00h - 13:00h",
+                flags: ["co.png"],
                 description: "Disfruta de masajes relajantes que alivian tensiones, mejoran tu circulación y recargan tu energía. En la sede de Stefanini.",
                 link: null
             },
@@ -82,21 +14,24 @@
                 title: "Seguros Bolivar ",
                 type: "Presencial",
                 time: "8:00h - 10:00h",
-                description: "En la sede de Stefanini.",
+                flags: ["co.png"],
+                description: "Juego de Rana - (Pon a prueba tu puntería y coordinación en este clásico juego. Diversión asegurada mientras ejercitas la concentración y la precisión). Concéntrese - (Un reto entretenido para tu mente: encuentra las parejas correctas, ejercita tu memoria y disfruta mientras entrenas tu agilidad mental). En la sede de Stefanini.",
                 link: null
             },
             {
                 title: "Emi",
                 type: "Presencial",
                 time: "14:00h - 16:00h",
-                description: "En la sede de Stefanini.",
+                flags: ["co.png"],
+                description: "Disfruta de unas deliciosas crispetas recién hechas, el sabor perfecto para acompañar tu experiencia en el FOW. En la sede de Stefanini.",
                 link: null
             },
             ],
             9: {
                 title: "Respira y Conecta",
                 type: "Virtual",
-                time: "16:00h",
+                time: "15:00h",
+                flags: ["co.png" , "hn.png" , "sv.png" , "pa.png" , "gt.png" , "cr.png" , "ni.png"],
                 description: "Taller de mindfulness para aprender a relajarte, reducir el estrés y vivir el momento presente con plenitud.",
                 link: "https://zoom.us/j/example9"
             },
@@ -105,6 +40,7 @@
                 title: "Pedaleando Sabor",
                 type: "Presencial",
                 time: "8:00h - 12:00h",
+                flags: ["co.png"],
                 description: "Súbete a la bici, genera tu propia energía y disfruta un jugo natural hecho con tu pedaleo. ¡Diversión y salud en un solo paso!. En la sede de Stefanini.",
                 link: null
             },
@@ -112,14 +48,16 @@
                 title: "Energía en Movimiento",
                 type: "Presencial",
                 time: "8:00h - 10:00h",
+                flags: ["co.png"],
                 description: "Un momento para estirar, activar el cuerpo y recargar la mente. A través de breves ejercicios físicos mejorarás tu postura, reducirás el estrés y volverás a tus actividades con más energía y concentración.",
                 link: null
             },
             {
-                title: "Compensar",
+                title: "Olivos",
                 type: "Presencial",
                 time: "14:00h - 16:00h",
-                description: "Revizar---------------------------------------------------------------",
+                flags: ["co.png"],
+                description: "En la sede de Stefanini.",
                 link: null
             }
             ],
@@ -127,25 +65,122 @@
                 title: "Rendimiento Saludable",
                 type: "Virtual",
                 time: "16:00h - 17:00h",
+                flags: ["co.png" , "hn.png" , "sv.png" , "pa.png" , "gt.png" , "cr.png" , "ni.png"],
                 description: "Charla con un deportólogo para descubrir cómo mejorar tu rendimiento físico, prevenir lesiones y alcanzar tus metas deportivas.",
                 link: "https://zoom.us/j/example11"
             },
-            12:[
-            {
-                title: "Colombina",
-                type: "presencial",
-                time: "8:00h - 12:00h",
-                description: "En la sede de Stefanini..",
+            12:{
+                title: "",
+                type: "",
+                time: "",
+                description: "",
                 link: null
             },
-            {
+            
+            15: [
+                {
+                    title: "Un Swing por tu Bienestar",
+                    type: "Presencial",
+                    time: "10:00h - 12:00h",
+                    flags: ["co.png"],
+                    description: "Un mini golf donde cada tiro es una oportunidad para aprender consejos prácticos de autocuidado y salud. En la sede de Stefanini.",
+                    link: null
+                },
+                {
+                    title: "Gira y Descubre",
+                    type: "Presencial",
+                    time: "10:00h - 12:00h",
+                    flags: ["co.png"],
+                    description: "Pon a prueba tu suerte en esta divertida ruleta y llévate tips y retos para mejorar tu estilo de vida día a día.",
+                    link: null
+                },
+
+                {
+                    title: "Mirada Sana, Mundo Claro",
+                    type: "Presencial",
+                    time: "10:00h - 12:00h",
+                    flags: ["co.png"],
+                    description: "Un espacio para aprender a cuidar tu salud visual, prevenir el cansancio ocular y mantener una visión nítida en tu día a día. En la sede de Stefanini.",
+                    link: null
+                },
+                {
+                    title: "Mirada Sana, Mundo Claro",
+                    type: "Virtual",
+                    time: "10:00h",
+                    flags: ["co.png" , "hn.png" , "sv.png" , "pa.png" , "gt.png" , "cr.png" , "ni.png"],
+                    description: "Un espacio para aprender a cuidar tu salud visual, prevenir el cansancio ocular y mantener una visión nítida en tu día a día.",
+                    link: "https://zoom.us/j/example3a"
+                },
+                {
+                    title: "Compensar",
+                    type: "Presencial",
+                    time: "14:00h - 16:00h",
+                    flags: ["co.png"],
+                    description: "En la sede de Stefanini.",
+                    link: null
+                }
+            ],
+            // Días con una sola actividad (OBJETO - como antes)
+            16: {
+                title: "Mente en Calma ",
+                type: "Virtual",
+                time: "10:00h",
+                flags: ["co.png" , "hn.png" , "sv.png" , "pa.png" , "gt.png" , "cr.png" , "ni.png"],
+                description: "Un espacio corto para desconectarte del estrés, liberar tensiones emocionales y recuperar tu enfoque con ejercicios sencillos de respiración y concentración.",
+                link: "https://zoom.us/j/example3a"
+            },
+            // Ejemplo de otro día con múltiples actividades (ARRAY)
+            17: [
+                {
+                    title: "Regala Vida",
+                    type: "Presencial",
+                    time: "8:00h - 12:00 h",
+                    flags: ["co.png"],
+                    description: "Participa en la jornada de donación de sangre y sé parte de quienes salvan vidas con un simple y valioso gesto. En la sede de Stefanini.",
+                    link: null
+                },
+                {
+                    title: "Colombina",
+                    type: "Presencial",
+                    time: "8:00h - 12:00h",
+                    flags: ["co.png"],
+                    description: "En la sede de Stefanini.",
+                    link: null
+                },
+                {
+                    title: "Emermedica",
+                    type: "Presencial",
+                    time: "8:00h - 12:00h",
+                    flags: ["co.png"],
+                    description: "En la sede de Stefanini.",
+                    link: null
+                },
+                {
+                    title: "Vetpluss",
+                    type: "Presencial",
+                    time: "14:00h - 16:00h",
+                    flags: ["co.png"],
+                    description: "En la sede de Stefanini.",
+                    link: null
+                }
+            ],
+            18: {
+                title: "Activa tu Energía",
+                type: "Virtual",
+                time: "10:00h",
+                flags: ["co.png" , "hn.png" , "sv.png" , "pa.png" , "gt.png" , "cr.png" , "ni.png"],
+                description: "Pequeños movimientos y estiramientos que despiertan tus músculos, mejoran tu postura y te llenan de vitalidad para continuar el día con más fuerza.",
+                link: "https://zoom.us/j/example4"
+            },
+            19: {
                 title: "Celebrando la Salud",
                 type: "Virtual",
                 time: "10:00h",
+                flags: ["co.png" , "hn.png" , "sv.png" , "pa.png" , "gt.png" , "cr.png" , "ni.png"],
                 description: "Cierre especial del festival con actividades, agradecimientos y un repaso de todo lo vivido.",
-                link: "https://zoom.us/j/example12"
-            }
-            ]
+                link: "https://zoom.us/j/example4"
+            },
+            
         };
 
         // Variables del carousel
@@ -177,7 +212,12 @@
                 activitiesHTML += `
                     <div class="single-activity">
                         <div class="activity-header">
-                            <h3 class="activity-title">${activity.title}</h3>
+
+
+                        <h3 class="activity-title">
+                        ${activity.title}
+                            ${activity.flags ? activity.flags.map(f => `<img src="img/${f}" class="flag-icon">`).join("") : ""}
+                        </h3>
                             <span class="activity-type ${activity.type.toLowerCase()}">${activity.type}</span>
                         </div>
                         ${activity.time ? `<div class="activity-time">📅 ${activity.time}</div>` : ''}
