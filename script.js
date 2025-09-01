@@ -52,7 +52,7 @@
             {
                 title: "Regala Vida",
                 type: "Presencial",
-                time: "8:00h - 12:00 h",
+                time: "8:00h - 12:00h",
                 flags: ["co.png"],
                 description: "Participa en la jornada de donación de sangre y sé parte de quienes salvan vidas con un simple y valioso gesto. En la sede de Stefanini.",
                 link: null
@@ -344,3 +344,4 @@ function revealMainContent() {
 
 // Iniciar al cargar la página
 document.addEventListener('DOMContentLoaded', startCountdown);
+
