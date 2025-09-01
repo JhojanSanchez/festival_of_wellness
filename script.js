@@ -2,6 +2,7 @@
         const activities = {
             // Ejemplo de día con múltiples actividades (ARRAY)
             8: [
+                /*
             {
                 title: "Desestrésate",
                 type: "Presencial",
@@ -10,6 +11,7 @@
                 description: "Disfruta de masajes relajantes que alivian tensiones, mejoran tu circulación y recargan tu energía. En la sede de Stefanini.",
                 link: null
             },
+            */
             {
                 title: "Seguros Bolivar ",
                 type: "Presencial",
@@ -348,4 +350,5 @@ function revealMainContent() {
 
 // Iniciar al cargar la página
 document.addEventListener('DOMContentLoaded', startCountdown);
+
 
