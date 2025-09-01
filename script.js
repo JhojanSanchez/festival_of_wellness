@@ -2,7 +2,7 @@
         const activities = {
             // Ejemplo de día con múltiples actividades (ARRAY)
             8: [
-                /*
+            /*
             {
                 title: "Desestrésate",
                 type: "Presencial",
@@ -38,20 +38,29 @@
                 link: "https://zoom.us/j/example9"
             },
             10: [
-                /*
             {
-                title: "Pedaleando Sabor",
+                title: "Rendimiento Saludable",
+                type: "Virtual",
+                time: "16:00h",
+                flags: ["co.png" , "hn.png" , "sv.png" , "pa.png" , "gt.png" , "cr.png" , "ni.png"],
+                description: "Charla con un deportólogo para descubrir cómo mejorar tu rendimiento físico, prevenir lesiones y alcanzar tus metas deportivas.",
+                link: "https://zoom.us/j/example11"
+            },
+
+            ],
+            11: [
+            {
+                title: "Regala Vida",
                 type: "Presencial",
-                time: "8:00h - 12:00h",
+                time: "8:00h - 12:00 h",
                 flags: ["co.png"],
-                description: "Súbete a la bici, genera tu propia energía y disfruta un jugo natural hecho con tu pedaleo. ¡Diversión y salud en un solo paso!. En la sede de Stefanini.",
+                description: "Participa en la jornada de donación de sangre y sé parte de quienes salvan vidas con un simple y valioso gesto. En la sede de Stefanini.",
                 link: null
             },
-            */
             {
                 title: "Energía en Movimiento",
                 type: "Presencial",
-                time: "8:00h - 10:00h",
+                time: "14:00h - 16:00h",
                 flags: ["co.png"],
                 description: "Un momento para estirar, activar el cuerpo y recargar la mente. A través de breves ejercicios físicos mejorarás tu postura, reducirás el estrés y volverás a tus actividades con más energía y concentración.",
                 link: null
@@ -64,15 +73,8 @@
                 description: "En la sede de Stefanini.",
                 link: null
             }
+
             ],
-            11: {
-                title: "Rendimiento Saludable",
-                type: "Virtual",
-                time: "16:00h - 17:00h",
-                flags: ["co.png" , "hn.png" , "sv.png" , "pa.png" , "gt.png" , "cr.png" , "ni.png"],
-                description: "Charla con un deportólogo para descubrir cómo mejorar tu rendimiento físico, prevenir lesiones y alcanzar tus metas deportivas.",
-                link: "https://zoom.us/j/example11"
-            },
             12:{
                 title: "",
                 type: "",
@@ -135,14 +137,6 @@
             },
             // Ejemplo de otro día con múltiples actividades (ARRAY)
             17: [
-                {
-                    title: "Regala Vida",
-                    type: "Presencial",
-                    time: "8:00h - 12:00 h",
-                    flags: ["co.png"],
-                    description: "Participa en la jornada de donación de sangre y sé parte de quienes salvan vidas con un simple y valioso gesto. En la sede de Stefanini.",
-                    link: null
-                },
                 {
                     title: "Colombina",
                     type: "Presencial",
@@ -350,5 +344,3 @@ function revealMainContent() {
 
 // Iniciar al cargar la página
 document.addEventListener('DOMContentLoaded', startCountdown);
-
-
