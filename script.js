@@ -36,6 +36,7 @@
                 link: "https://zoom.us/j/example9"
             },
             10: [
+                /*
             {
                 title: "Pedaleando Sabor",
                 type: "Presencial",
@@ -44,6 +45,7 @@
                 description: "Súbete a la bici, genera tu propia energía y disfruta un jugo natural hecho con tu pedaleo. ¡Diversión y salud en un solo paso!. En la sede de Stefanini.",
                 link: null
             },
+            */
             {
                 title: "Energía en Movimiento",
                 type: "Presencial",
@@ -346,3 +348,4 @@ function revealMainContent() {
 
 // Iniciar al cargar la página
 document.addEventListener('DOMContentLoaded', startCountdown);
+
