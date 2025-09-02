@@ -2,7 +2,6 @@
         const activities = {
             // Ejemplo de día con múltiples actividades (ARRAY)
             8: [
-            /*
             {
                 title: "Desestrésate",
                 type: "Presencial",
@@ -11,7 +10,6 @@
                 description: "Disfruta de masajes relajantes que alivian tensiones, mejoran tu circulación y recargan tu energía. En la sede de Stefanini.",
                 link: null
             },
-            */
             {
                 title: "Seguros Bolivar ",
                 type: "Presencial",
@@ -38,6 +36,7 @@
                 link: "https://zoom.us/j/example9"
             },
             10: [
+            /*
             {
                 title: "Rendimiento Saludable",
                 type: "Virtual",
@@ -46,13 +45,14 @@
                 description: "Charla con un deportólogo para descubrir cómo mejorar tu rendimiento físico, prevenir lesiones y alcanzar tus metas deportivas.",
                 link: "https://zoom.us/j/example11"
             },
+            */
 
             ],
             11: [
             {
                 title: "Regala Vida",
                 type: "Presencial",
-                time: "8:00h - 12:00h",
+                time: "8:00h - 12:00 h",
                 flags: ["co.png"],
                 description: "Participa en la jornada de donación de sangre y sé parte de quienes salvan vidas con un simple y valioso gesto. En la sede de Stefanini.",
                 link: null
@@ -85,6 +85,14 @@
             
             15: [
                 {
+                    title: "Manos Saludables, Vida Activa",
+                    type: "Presencial",
+                    time: "10:00h - 12:00h",
+                    flags: ["co.png"],
+                    description: "Aprende prácticas sencillas para mantener tus manos fuertes, limpias y protegidas, esenciales en tu día a día.",
+                    link: null
+                },
+                {
                     title: "Un Swing por tu Bienestar",
                     type: "Presencial",
                     time: "10:00h - 12:00h",
@@ -98,15 +106,6 @@
                     time: "10:00h - 12:00h",
                     flags: ["co.png"],
                     description: "Pon a prueba tu suerte en esta divertida ruleta y llévate tips y retos para mejorar tu estilo de vida día a día.",
-                    link: null
-                },
-
-                {
-                    title: "Mirada Sana, Mundo Claro",
-                    type: "Presencial",
-                    time: "10:00h - 12:00h",
-                    flags: ["co.png"],
-                    description: "Un espacio para aprender a cuidar tu salud visual, prevenir el cansancio ocular y mantener una visión nítida en tu día a día. En la sede de Stefanini.",
                     link: null
                 },
                 {
@@ -137,6 +136,14 @@
             },
             // Ejemplo de otro día con múltiples actividades (ARRAY)
             17: [
+                {
+                    title: "Alimenta tu Bienestar",
+                    type: "Virtual",
+                    time: "10:00h",
+                    flags: ["co.png" , "hn.png" , "sv.png" , "pa.png" , "gt.png" , "cr.png" , "ni.png"],
+                    description: "Descubre cómo una buena nutrición potencia tu energía, previene enfermedades y mejora tu calidad de vida.",
+                    link: "https://zoom.us/j/example3a"
+                },
                 {
                     title: "Colombina",
                     type: "Presencial",
@@ -344,4 +351,3 @@ function revealMainContent() {
 
 // Iniciar al cargar la página
 document.addEventListener('DOMContentLoaded', startCountdown);
-
