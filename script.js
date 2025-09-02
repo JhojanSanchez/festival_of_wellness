@@ -1,4 +1,4 @@
-        // Datos de las actividades
+         // Datos de las actividades
         const activities = {
             // Ejemplo de día con múltiples actividades (ARRAY)
             8: [
@@ -23,7 +23,7 @@
                 type: "Presencial",
                 time: "14:00h - 16:00h",
                 flags: ["co.png"],
-                description: "Disfruta de unas deliciosas crispetas recién hechas, el sabor perfecto para acompañar tu experiencia en el FeW. En la sede de Stefanini.",
+                description: "Disfruta de unas deliciosas crispetas recién hechas, el sabor perfecto para acompañar tu experiencia en el FOW. En la sede de Stefanini.",
                 link: null
             },
             ],
@@ -33,7 +33,7 @@
                 time: "15:00h",
                 flags: ["co.png" , "hn.png" , "sv.png" , "pa.png" , "gt.png" , "cr.png" , "ni.png"],
                 description: "Taller de mindfulness para aprender a relajarte, reducir el estrés y vivir el momento presente con plenitud.",
-                link: "https://zoom.us/j/example9"
+                link: "https://lc.cx/ih-OWq"
             },
             10: [
             /*
@@ -114,7 +114,7 @@
                     time: "10:00h",
                     flags: ["co.png" , "hn.png" , "sv.png" , "pa.png" , "gt.png" , "cr.png" , "ni.png"],
                     description: "Un espacio para aprender a cuidar tu salud visual, prevenir el cansancio ocular y mantener una visión nítida en tu día a día.",
-                    link: "https://zoom.us/j/example3a"
+                    link: "https://lc.cx/26T2L3"
                 },
                 {
                     title: "Compensar",
@@ -132,7 +132,7 @@
                 time: "10:00h",
                 flags: ["co.png" , "hn.png" , "sv.png" , "pa.png" , "gt.png" , "cr.png" , "ni.png"],
                 description: "Un espacio corto para desconectarte del estrés, liberar tensiones emocionales y recuperar tu enfoque con ejercicios sencillos de respiración y concentración.",
-                link: "https://zoom.us/j/example3a"
+                link: "https://lc.cx/ZrSNXi"
             },
             // Ejemplo de otro día con múltiples actividades (ARRAY)
             17: [
@@ -142,7 +142,7 @@
                     time: "10:00h",
                     flags: ["co.png" , "hn.png" , "sv.png" , "pa.png" , "gt.png" , "cr.png" , "ni.png"],
                     description: "Descubre cómo una buena nutrición potencia tu energía, previene enfermedades y mejora tu calidad de vida.",
-                    link: "https://zoom.us/j/example3a"
+                    link: "https://lc.cx/wvAwuQ"
                 },
                 {
                     title: "Colombina",
@@ -175,7 +175,7 @@
                 time: "10:00h",
                 flags: ["co.png" , "hn.png" , "sv.png" , "pa.png" , "gt.png" , "cr.png" , "ni.png"],
                 description: "Pequeños movimientos y estiramientos que despiertan tus músculos, mejoran tu postura y te llenan de vitalidad para continuar el día con más fuerza.",
-                link: "https://zoom.us/j/example4"
+                link: "https://lc.cx/TvLBHO"
             },
             19: {
                 title: "Celebrando la Salud",
@@ -183,7 +183,7 @@
                 time: "10:00h",
                 flags: ["co.png" , "hn.png" , "sv.png" , "pa.png" , "gt.png" , "cr.png" , "ni.png"],
                 description: "Cierre especial del festival con actividades, agradecimientos y un repaso de todo lo vivido.",
-                link: "https://zoom.us/j/example4"
+                link: "https://lc.cx/P4n9cI"
             },
             
         };
@@ -351,4 +351,3 @@ function revealMainContent() {
 
 // Iniciar al cargar la página
 document.addEventListener('DOMContentLoaded', startCountdown);
-
