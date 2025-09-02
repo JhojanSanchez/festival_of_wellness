@@ -23,7 +23,7 @@
                 type: "Presencial",
                 time: "14:00h - 16:00h",
                 flags: ["co.png"],
-                description: "Disfruta de unas deliciosas crispetas recién hechas, el sabor perfecto para acompañar tu experiencia en el FOW. En la sede de Stefanini.",
+                description: "Disfruta de unas deliciosas crispetas recién hechas, el sabor perfecto para acompañar tu experiencia en el FeW. En la sede de Stefanini.",
                 link: null
             },
             ],
@@ -351,3 +351,4 @@ function revealMainContent() {
 
 // Iniciar al cargar la página
 document.addEventListener('DOMContentLoaded', startCountdown);
+
