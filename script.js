@@ -1,4 +1,4 @@
-         // Datos de las actividades
+        // Datos de las actividades
         const activities = {
             // Ejemplo de día con múltiples actividades (ARRAY)
             8: [
@@ -25,6 +25,15 @@
                 flags: ["co.png"],
                 description: "Disfruta de unas deliciosas crispetas recién hechas, el sabor perfecto para acompañar tu experiencia en el FOW. En la sede de Stefanini.",
                 link: null
+            },
+            {
+                title: "Juntos por los peluditos",
+                type: "Presencial ",
+                time: "",
+                flags: ["co.png"],
+                description: "Recibiremos las donaciones en la sede de Stefanini. Buscamos voluntarios para una jornada especial de baño y cuidado de perritos",
+                link: "https://lc.cx/4W5oN0" ,
+                image: "./img/donaperrogato.png"
             },
             ],
             9: {
@@ -55,7 +64,8 @@
                 time: "8:00h - 12:00 h",
                 flags: ["co.png"],
                 description: "Participa en la jornada de donación de sangre y sé parte de quienes salvan vidas con un simple y valioso gesto. En la sede de Stefanini.",
-                link: null
+                link: null,
+                image: "./img/donacion.jpeg"
             },
             {
                 title: "Energía en Movimiento",
@@ -72,7 +82,16 @@
                 flags: ["co.png"],
                 description: "En la sede de Stefanini.",
                 link: null
-            }
+            },
+            {
+                title: "Juntos por los peluditos",
+                type: "Presencial ",
+                time: "",
+                flags: ["co.png"],
+                description: "Recibiremos las donaciones en la sede de Stefanini. Buscamos voluntarios para una jornada especial de baño y cuidado de perritos",
+                link: "https://lc.cx/4W5oN0" ,
+                image: "./img/donaperrogato.png"
+            },
 
             ],
             12:{
@@ -109,6 +128,14 @@
                     link: null
                 },
                 {
+                    title: "Lafam",
+                    type: "Presencial",
+                    time: "9:00h - 12:00h",
+                    flags: ["co.png"],
+                    description: "Explora su stand y recibe consejos sobre cuidado visual, además de conocer su variedad de gafas y soluciones para tu salud ocular.",
+                    link: null
+                },
+                {
                     title: "Mirada Sana, Mundo Claro",
                     type: "Virtual",
                     time: "10:00h",
@@ -123,7 +150,17 @@
                     flags: ["co.png"],
                     description: "En la sede de Stefanini.",
                     link: null
-                }
+                },
+            {
+                title: "Juntos por los peluditos",
+                type: "Presencial ",
+                time: "",
+                flags: ["co.png"],
+                description: "Recibiremos las donaciones en la sede de Stefanini. Buscamos voluntarios para una jornada especial de baño y cuidado de perritos",
+                link: "https://lc.cx/4W5oN0" ,
+                image: "./img/donaperrogato.png"
+            },
+
             ],
             // Días con una sola actividad (OBJETO - como antes)
             16: {
@@ -167,7 +204,16 @@
                     flags: ["co.png"],
                     description: "En la sede de Stefanini.",
                     link: null
-                }
+                },
+            {
+                title: "Juntos por los peluditos",
+                type: "Presencial ",
+                time: "",
+                flags: ["co.png"],
+                description: "Recibiremos las donaciones en la sede de Stefanini. Buscamos voluntarios para una jornada especial de baño y cuidado de perritos",
+                link: "https://lc.cx/4W5oN0" ,
+                image: "./img/donaperrogato.png"
+            },
             ],
             18: {
                 title: "Activa tu Energía",
@@ -227,9 +273,16 @@
                         </div>
                         ${activity.time ? `<div class="activity-time">📅 ${activity.time}</div>` : ''}
                         <p class="activity-description">${activity.description}</p>
+                        ${activity.image ? `<img src="${activity.image}" alt="${activity.title}" class="activity-image">` : ''}
                         ${activity.type === 'Virtual' && activity.link ? `
                             <a href="${activity.link}" class="btn btn-primary" target="_blank">
                                 🔗 Unirse a la Actividad Virtual
+                            </a>
+                        ` : ''}
+                        <p></p>
+                        ${activity.type === 'Presencial ' && activity.link ? `
+                            <a href="${activity.link}" class="btn btn-primary" target="_blank">
+                                🔗 Dona aqui
                             </a>
                         ` : ''}
                     </div>
@@ -270,7 +323,7 @@
         // Auto-slide del carousel
         setInterval(() => {
             changeSlide(1);
-        }, 5000);
+        }, 8000);
 
         // Función para descargar fondo virtual
         function downloadBackground() {
