@@ -44,20 +44,8 @@
                 description: "Taller de mindfulness para aprender a relajarte, reducir el estrés y vivir el momento presente con plenitud.",
                 link: "https://lc.cx/ih-OWq"
             },
-            10: [
-            /*
-            {
-                title: "Rendimiento Saludable",
-                type: "Virtual",
-                time: "16:00h",
-                flags: ["co.png" , "hn.png" , "sv.png" , "pa.png" , "gt.png" , "cr.png" , "ni.png"],
-                description: "Charla con un deportólogo para descubrir cómo mejorar tu rendimiento físico, prevenir lesiones y alcanzar tus metas deportivas.",
-                link: "https://zoom.us/j/example11"
-            },
-            */
-
-            ],
-            11: [
+            10: 
+            [
             {
                 title: "Regala Vida",
                 type: "Presencial",
@@ -92,14 +80,26 @@
                 link: "https://lc.cx/4W5oN0" ,
                 image: "./img/donaperrogato.png"
             },
-
             ],
-            12:{
+            
+            11: 
+            {
                 title: "",
                 type: "",
                 time: "",
+                flags: [],
                 description: "",
                 link: null
+            },
+            
+            12:
+            {
+                title: "Rendimiento Saludable",
+                type: "Virtual",
+                time: "15:00h",
+                flags: ["co.png" , "hn.png" , "sv.png" , "pa.png" , "gt.png" , "cr.png" , "ni.png"],
+                description: "Charla con un deportólogo para descubrir cómo mejorar tu rendimiento físico, prevenir lesiones y alcanzar tus metas deportivas.",
+                link: "https://zoom.us/j/example11"
             },
             
             15: [
