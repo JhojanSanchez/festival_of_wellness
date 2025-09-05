@@ -99,7 +99,7 @@
                 time: "15:00h",
                 flags: ["co.png" , "hn.png" , "sv.png" , "pa.png" , "gt.png" , "cr.png" , "ni.png"],
                 description: "Charla con un deportólogo para descubrir cómo mejorar tu rendimiento físico, prevenir lesiones y alcanzar tus metas deportivas.",
-                link: "https://zoom.us/j/example11"
+                link: "https://lc.cx/AlOGDR"
             },
             
             15: [
@@ -404,3 +404,4 @@ function revealMainContent() {
 
 // Iniciar al cargar la página
 document.addEventListener('DOMContentLoaded', startCountdown);
+
