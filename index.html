@@ -139,83 +139,32 @@
                 </a>
             </div>
         </div>
-
-        <!-- Carousel Section -->
+<!-- Carousel Section -->
         <div class="carousel-section">
             <h2 class="section-title">Galería del Festival</h2>
             <div class="carousel">
                 <div class="carousel-container">
-                    <div class="carousel-slide active" style="
-                    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
-                    url('./img/img1.jpeg');
-                    background-size: cover; background-position: center;">
-                        <div class="slide-content">
-                            <h3>Desestrésate</h3>
-                            <p>Disfruta de masajes relajantes que alivian tensiones, mejoran tu circulación y recargan tu energía. En la sede de Stefanini.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-slide" style="
-                    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
-                    url('./img/img2.jpeg');
-                    background-size: cover; background-position: center;">
-                        <div class="slide-content">
-                            <h3>Desestrésate</h3>
-                            <p>Disfruta de masajes relajantes que alivian tensiones, mejoran tu circulación y recargan tu energía. En la sede de Stefanini.</p>
-                        </div>
+                    <!-- Aquí JS insertará las imágenes -->
                     </div>
                     
-                    <div class="carousel-slide" style="
-                    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
-                    url('./img/img3.jpeg');
-                    background-size: cover; background-position: center;">
-                        <div class="slide-content">
-                            <h3>Seguros Bolivar</h3>
-                            <p>Juego de Rana - (Pon a prueba tu puntería y coordinación en este clásico juego. Diversión asegurada mientras ejercitas la concentración y la precisión).</p>
-                        </div>
-                    </div>
-                    <div class="carousel-slide" style="
-                    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
-                    url('./img/H&WW.png');
-                    background-size: cover; background-position: center;">
-                        <div class="slide-content">
-                            <h3>Muy pronto</h3>
-                            <p>Mas Información</p>
-                        </div>
-                    </div>
-
-                    <div class="carousel-slide" style="
-                    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
-                    url('./img/H&WW.png');
-                    background-size: cover; background-position: center;">
-                        <div class="slide-content">
-                            <h3>Muy pronto</h3>
-                            <p>Mas Información</p>
-                        </div>
-                    </div>
-                </div>
-
-                <! -- Para agregar las imagenes desde el div -->
-
-                <button class="carousel-arrows prev" onclick="changeSlide(-1)">❮</button>
-                <button class="carousel-arrows next" onclick="changeSlide(1)">❯</button>
-                
-                <div class="carousel-nav">
-                    <span class="nav-dot active" onclick="currentSlide(1)"></span>
-                    <span class="nav-dot" onclick="currentSlide(2)"></span>
-                    <span class="nav-dot" onclick="currentSlide(3)"></span>
-                    <span class="nav-dot" onclick="currentSlide(4)"></span>
-                    <span class="nav-dot" onclick="currentSlide(5)"></span> <! -- Para agregar mas imagenes toca hacer consecutivo -->
-                </div>
-            </div>
+                    <button class="carousel-arrows prev" onclick="changeSlide(-1)">❮</button>
+                    <button class="carousel-arrows next" onclick="changeSlide(1)">❯</button>
+                    <div class="carousel-nav">
+        <!-- Aquí JS insertará los puntitos -->
         </div>
     </div>
+</div>
+
+    <audio id="background-music" autoplay loop></audio>
+    <button id="next-song">⏭️ Siguiente</button>
+        <button id="toggle-music">🔊 Música</button>
 
     <script src="script.js"></script>
     <footer>
         <p>&copy; 2025 - Desarrollado por Jhojan Sanchez</p>
     </footer>
     
+
     </body>
 
 </html>
-
