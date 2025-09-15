@@ -522,7 +522,8 @@
     object-fit: cover;
 }
 
-       footer {
+
+    footer {
             text-align: center;
             padding: 20px;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -530,7 +531,60 @@
             margin-top: 40px;
             border-radius: 15px;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-               }
+        }
 
 
 
+#toggle-music {
+  background: linear-gradient(135deg, #ff7eb3, #ff758c); /* Degradado */
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  position: fixed;
+  bottom: 20px;   /* flotante abajo */
+  right: 20px;    /* flotante a la derecha */
+  z-index: 9999;  /* para que quede siempre visible */
+}
+
+#toggle-music:hover {
+  background: linear-gradient(135deg, #ff9966, #ff5e62);
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.3);
+}
+
+#toggle-music:active {
+  transform: scale(0.95);
+}
+
+#next-song {
+  background: linear-gradient(135deg, #42e695, #3bb2b8); /* Verde/azul */
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  position: fixed;
+  bottom: 20px;
+  right: 140px;   /* Se ubica a la izquierda del de música */
+  z-index: 9999;
+}
+
+#next-song:hover {
+  background: linear-gradient(135deg, #56ab2f, #a8e063);
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.3);
+}
+
+#next-song:active {
+  transform: scale(0.95);
+}
