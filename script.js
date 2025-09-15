@@ -11,7 +11,7 @@
                 link: null
             },
             {
-                title: "Seguros Bolivar ",
+                title: "Seguros Bolivar",
                 type: "Presencial",
                 time: "8:00h - 10:00h",
                 flags: ["co.png"],
@@ -405,3 +405,128 @@ function revealMainContent() {
 // Iniciar al cargar la página
 document.addEventListener('DOMContentLoaded', startCountdown);
 
+
+// ==========================
+// CONFIGURACIÓN DE SLIDES
+// ==========================
+const slidesData = [
+    { img: "./img/img1.jpeg", title: "Desestrésate", desc: "Masajes relajantes en Stefanini." },
+    { img: "./img/img2.jpeg", title: "Desestrésate", desc: "Disfruta de masajes que alivian tensiones." },
+    { img: "./img/img3.jpeg", title: "Seguros Bolivar", desc: "Juego de Rana: Diversión asegurada." },
+    { img: "./img/img4.jpeg", title: "Regala Vida", desc: "Participa en la jornada de donación de sangre y sé parte de quienes salvan vidas con un simple y valioso gesto. En la sede de Stefanini." },
+    { img: "./img/img5.jpeg", title: "Regala Vida", desc: "Participa en la jornada de donación de sangre y sé parte de quienes salvan vidas con un simple y valioso gesto. En la sede de Stefanini." },
+    { img: "./img/img6.jpeg", title: "Regala Vida", desc: "Participa en la jornada de donación de sangre y sé parte de quienes salvan vidas con un simple y valioso gesto. En la sede de Stefanini." },
+    { img: "./img/img7.jpeg", title: "Manos Saludables, Vida Activa", desc: "Aprende prácticas sencillas para mantener tus manos fuertes, limpias y protegidas, esenciales en tu día a día." },
+    { img: "./img/img8.jpeg", title: "Manos Saludables, Vida Activa", desc: "Aprende prácticas sencillas para mantener tus manos fuertes, limpias y protegidas, esenciales en tu día a día." },
+    { img: "./img/img9.jpeg", title: "Manos Saludables, Vida Activa", desc: "Aprende prácticas sencillas para mantener tus manos fuertes, limpias y protegidas, esenciales en tu día a día." },
+    { img: "./img/img10.jpeg", title: "Manos Saludables, Vida Activa", desc: "Aprende prácticas sencillas para mantener tus manos fuertes, limpias y protegidas, esenciales en tu día a día." },
+    { img: "./img/img11.jpeg", title: "Manos Saludables, Vida Activa", desc: "Aprende prácticas sencillas para mantener tus manos fuertes, limpias y protegidas, esenciales en tu día a día." },
+    { img: "./img/img12.jpeg", title: "Manos Saludables, Vida Activa", desc: "Aprende prácticas sencillas para mantener tus manos fuertes, limpias y protegidas, esenciales en tu día a día." },
+    { img: "./img/img13.jpeg", title: "Manos Saludables, Vida Activa", desc: "Aprende prácticas sencillas para mantener tus manos fuertes, limpias y protegidas, esenciales en tu día a día." },
+    { img: "./img/img14.jpeg", title: "Manos Saludables, Vida Activa", desc: "Aprende prácticas sencillas para mantener tus manos fuertes, limpias y protegidas, esenciales en tu día a día." },
+    { img: "./img/img15.jpeg", title: "Manos Saludables, Vida Activa", desc: "Aprende prácticas sencillas para mantener tus manos fuertes, limpias y protegidas, esenciales en tu día a día." },
+    { img: "./img/img16.jpeg", title: "Manos Saludables, Vida Activa", desc: "Aprende prácticas sencillas para mantener tus manos fuertes, limpias y protegidas, esenciales en tu día a día." },
+    { img: "./img/img17.jpeg", title: "Manos Saludables, Vida Activa", desc: "Aprende prácticas sencillas para mantener tus manos fuertes, limpias y protegidas, esenciales en tu día a día." },
+    { img: "./img/img18.jpeg", title: "Manos Saludables, Vida Activa", desc: "Aprende prácticas sencillas para mantener tus manos fuertes, limpias y protegidas, esenciales en tu día a día." },
+    { img: "./img/img19.png", title: "Mirada Sana, Mundo Claro", desc: "Un espacio para aprender a cuidar tu salud visual, prevenir el cansancio ocular y mantener una visión nítida en tu día a día." },
+    { img: "./img/img20.png", title: "Mirada Sana, Mundo Claro", desc: "Un espacio para aprender a cuidar tu salud visual, prevenir el cansancio ocular y mantener una visión nítida en tu día a día." },
+
+];
+
+// ==========================
+// CREACIÓN DINÁMICA
+// ==========================
+const container = document.querySelector(".carousel-container");
+const nav = document.querySelector(".carousel-nav");
+
+slidesData.forEach((slide, index) => {
+  // Crear slide
+    const div = document.createElement("div");
+    div.classList.add("carousel-slide");
+    if (index === 0) div.classList.add("active"); // activa el primero
+    div.style.background = `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('${slide.img}')`;
+    div.style.backgroundSize = "cover";
+    div.style.backgroundPosition = "center";
+
+    div.innerHTML = `
+        <div class="slide-content">
+    <h3>${slide.title}</h3>
+    <p>${slide.desc}</p>
+    </div>
+    `;
+    container.appendChild(div);
+
+  // Crear puntito de navegación
+    const dot = document.createElement("span");
+    dot.classList.add("nav-dot");
+    if (index === 0) dot.classList.add("active");
+    dot.onclick = () => currentSlide(index + 1);
+    nav.appendChild(dot);
+});
+
+// ==========================
+// LÓGICA DEL CARRUSEL
+// ==========================
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function changeSlide(n) {
+    showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    const slides = document.querySelectorAll(".carousel-slide");
+    const dots = document.querySelectorAll(".nav-dot");
+    if (n > slides.length) slideIndex = 1;
+    if (n < 1) slideIndex = slides.length;
+
+    slides.forEach(slide => slide.classList.remove("active"));
+    dots.forEach(dot => dot.classList.remove("active"));
+
+    slides[slideIndex - 1].classList.add("active");
+    dots[slideIndex - 1].classList.add("active");
+}
+
+
+
+// ==========================
+// LISTA DE CANCIONES
+// ==========================
+const songs = [
+    "music/song1.mp3",
+    "music/song2.mp3",
+    "music/song3.mp3",
+    "music/song4.mp3",
+    "music/song5.mp3",
+    "music/song6.mp3"
+];
+
+const audio = document.getElementById("background-music");
+let currentSongIndex = Math.floor(Math.random() * songs.length);
+
+// Reproducir la primera canción aleatoria
+audio.src = songs[currentSongIndex];
+audio.volume = 0.5;
+audio.play();
+
+// Botón de play/pause
+document.getElementById("toggle-music").addEventListener("click", () => {
+  if (audio.paused) {
+    audio.play();
+    document.getElementById("toggle-music").textContent = "🔊 Música";
+  } else {
+    audio.pause();
+    document.getElementById("toggle-music").textContent = "🔇 Música";
+  }
+});
+
+// Botón de siguiente canción
+document.getElementById("next-song").addEventListener("click", () => {
+  currentSongIndex = (currentSongIndex + 1) % songs.length; // pasa a la siguiente
+  audio.src = songs[currentSongIndex];
+  audio.play();
+});
